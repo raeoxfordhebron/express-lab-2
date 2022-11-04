@@ -46,6 +46,3 @@ app.listen(PORT, () => {
     console.log(`listening to ${PORT}`)
 })
 
-// Take One Down and Pass It Around
-
-// Build an express application that enables user to count down the number of bottles of beer.
