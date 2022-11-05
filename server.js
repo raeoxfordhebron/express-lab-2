@@ -42,7 +42,19 @@ app.get('/magic/:question', (request, response) => {
     <h1>${magicBall[Math.floor(Math.random()*20)]}</h1>`)
 })
 
+// Fibonnaci
+
+app.get('/fibonnaci/:number', (request, response) => {
+    if(`${request.params.number} === ${request.params.number -1} + ${request.params.number - 2}`){
+        response.send(`Very good. It is Fibonacci`)
+    } else {
+        response.send(`I can tell this is not a fibonacci number`)
+    }
+})
+
 app.listen(PORT, () => {
     console.log(`listening to ${PORT}`)
 })
+
+
 
